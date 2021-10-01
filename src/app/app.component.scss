@@ -50,6 +50,48 @@ section {
     }
 }
 
+.section1 {
+    .div {
+        text-align: center;
+        h5 {
+            color: gray;
+            font-weight: 100;
+            font-size: 1.5vmax;
+        }
+        h1 {
+            font-size: 2.5vmax;
+        }
+    }
+}
+
+.section2 {
+    padding-left: 6vmax;
+    .row {
+        .image-1 {
+            display: flex;
+            .f-image {
+                width: 5vw;
+                height: 5vh;
+                img {
+                    width: 100%;
+                }
+            }
+            .s-image {
+                width: 25vw;
+                height: 25vh;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+// *Media Queries*
+
 @media (max-width: 1200px) {
     section {
         .main-content {
@@ -65,6 +107,10 @@ section {
             }
         }
     }
+
+    .section1 {
+        margin-top: -8%;
+    }
 }
 
 @media (max-width: 950px) {
@@ -74,6 +120,9 @@ section {
                 line-height: 3vh;
             }
         }
+    }
+    .section1 {
+        margin-top: -6%;
     }
 }
 
@@ -89,6 +138,9 @@ section {
             }
         }
     }
+    .section1 {
+        margin-top: -25%;
+    }
 }
 
 @media (max-width: 770px) {
@@ -97,7 +149,7 @@ section {
         .row {
             flex-direction: column-reverse;
             .main-content {
-                margin-top: 34px;
+                margin-top: 120px;
                 padding-left: 60px;
                 h1 {
                 }
@@ -115,6 +167,9 @@ section {
             }
         }
     }
+    .section1 {
+        margin-top: 4%;
+    }
 }
 
 @media (max-width: 700px) {
@@ -127,6 +182,9 @@ section {
                 }
             }
         }
+    }
+    .section1 {
+        margin-top: 7%;
     }
 }
 
@@ -150,12 +208,15 @@ section {
             }
         }
     }
+    .section1 {
+        margin-top: -3%;
+    }
 }
 @media (max-width: 480px) {
     section {
         .row {
             .main-content {
-                margin-top: -20vh;
+                margin-top: -10vh;
                 button {
                     width: 40vw;
                 }
@@ -164,5 +225,26 @@ section {
                 }
             }
         }
+    }
+    .section1 {
+        margin-top: 12%;
+    }
+}
+
+@media (max-width: 363px) {
+    section {
+        .row {
+            .main-content {
+                margin-top: -20vh;
+            }
+            .image {
+                img {
+                    left: -6%;
+                }
+            }
+        }
+    }
+    .section1 {
+        margin-top: 10%;
     }
 }
